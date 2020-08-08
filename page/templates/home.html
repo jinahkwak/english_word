@@ -47,9 +47,25 @@
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
+          
         }
       }
     </style>
+
+    <style>
+      .blank1 {
+        width: 300px;
+        margin: 20px auto;
+      }
+    </style>
+
+<style>
+  .blank2 {
+    width: 300px;
+    margin: 20px auto;
+  }
+</style>
+
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
@@ -57,10 +73,9 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      <h3 class="masthead-brand">영단어 수집기</h3>
+      <h3 class="masthead-brand">made by 진아</h3>
       <nav class="nav nav-masthead justify-content-center">
         <a class="nav-link active" href="#">HOME</a>
-        <a class="nav-link" href="#">COLLECT</a>
         <a class="nav-link" href="#">RESULT</a>
       </nav>
     </div>
@@ -69,6 +84,22 @@
   <main role="main" class="inner cover">
     <h1 class="cover-heading">영어 단어 수집기</h1>
     <p class="lead">영어 단어를 저장해 봅시다</p>
+
+    <div class="blank1">
+    <label for="inputEmail" class="sr-only">영단어 입력</label>
+    <label for="inputPassword" class="sr-only">뜻 입력</label>
+    <h1><input type="email" id="inputEmail" class="form-control" placeholder="영단어 입력" required autofocus>
+    <input type="password" id="inputPassword" class="form-control" placeholder="뜻 입력" required></h1>
+    </div>
+
+    <div class="blank2">
+      <label for="inputEmail" class="sr-only">영단어 입력</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="영단어 입력" required autofocus>
+    <label for="inputPassword" class="sr-only">뜻 입력</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="뜻 입력" required>
+    </div>
+
+
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary">LET'S STUDY</a>
     </p>
