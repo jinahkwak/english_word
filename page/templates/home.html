@@ -81,15 +81,30 @@
 
 <div id="blank-box">
     <div class="blank1">
-      <label for="inputEmail" class="sr-only">영단어 입력</label>
+    <label for="inputEmail" class="sr-only">영단어 입력</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="영단어 입력" required autofocus>
-    <label for="inputPassword" class="sr-only">뜻 입력</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="뜻 입력" required>
+    <label for="inputEmail" class="sr-only">뜻 입력</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="뜻 입력" required autofocus>
+<!--추가부분-->
+<table class="table table-striped">
+  <thead>
+  <tr>
+      <td><B>번호</B></td>
+      <td><B>이름</B></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>{{word.id}}번</td>
+      <td>{{word.name}}</td>
+  </tr>
+  <tbody>
+</table>
     </div>
 </div>
     <p class="lead">
       <a id="btn-add" class="btn btn-lg btn-secondary">ADD</a>
-      <a href="#" class="btn btn-lg btn-secondary">STORE</a>
+      <a id="btn-store" class="btn btn-lg btn-secondary">STORE</a>
     </p>
   </main>
 </div>
@@ -101,6 +116,10 @@ $('#btn-add').on('click', () => {
   iDiv.className = 'blank1';
   iDiv.innerHTML = $('.blank1')[0].innerHTML;
   document.getElementById('blank-box').appendChild(iDiv);
+});
+
+$('#btn-store').on('click', () => {
+  
 });
   </script>
 </body>
