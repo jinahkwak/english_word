@@ -21,5 +21,6 @@ urlpatterns = [
     #path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('profile/<int:word_id>/', views.result, name='result'),
+    path('result/', views.result, name="result"),
+    #path('profile/<int:word_id>/', views.result, name='result'),
 ]

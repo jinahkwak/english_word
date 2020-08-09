@@ -7,5 +7,5 @@ class Collect(models.Model):
 
 
 # 웹에 적은 word 요청
-#def __str__(self):
-#    return self.word 
+def __str__(self):
+    return self.word 
