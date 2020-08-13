@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
     path('result/', views.result, name="result"),
-    #path('profile/<int:word_id>/', views.result, name='result'),
+    
 ]
